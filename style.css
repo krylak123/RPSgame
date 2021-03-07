@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #789;
+}
+
+div.wrap {
+    margin: 0 auto;
+    max-width: 1360px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+}
+
+header,
+/* main, */
+footer {
+    padding: 10px 0;
+    text-shadow: 0 0 10px black;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #678;
+}
+
+main {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+main .options {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+}
+
+main .options h2 {
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+main .options .wrap-images {
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+main .options .wrap-images img {
+    margin: 0 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .1s;
+}
+
+main .options .wrap-images img:hover {
+    transform: scale(1.05);
+}
+
+main .options button {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 50px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: .2s;
+    cursor: pointer;
+}
+
+main .options button:hover {
+    background-color: transparent;
+    box-shadow: inset 0 0 10px 2px black;
+}
+
+main .options button:focus {
+    outline-style: none;
+}
+
+main .options button:active {
+    transition: 0s;
+    background-color: #678;
+}
+
+main .result,
+main .result-live {
+    flex-basis: 40%;
+    text-align: center;
+}
+
+main .result h3,
+main .result-live h3 {
+    width: 60%;
+    margin: 0 auto 10px;
+    border-bottom: 1px solid #000;
+}
+
+footer {
+    background-color: #678;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}

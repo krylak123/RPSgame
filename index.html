@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock, Paper, Scissors Game</title>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <header>
+            <h1>Rock - Paper - Scissors</h1>
+        </header>
+        <main>
+            <section class="options">
+                <h2>Please choose:</h2>
+                <div class="wrap-images">
+                    <img data-option="rock" src="images/kamien.jpg" alt="rock">
+                    <img data-option="paper" src="images/papier.jpg" alt="paper">
+                    <img data-option="scissors" src="images/nozyczki.jpg" alt="scissors">
+                </div>
+                <button id="accept">let's play!</button>
+            </section>
+            <section class="result">
+                <h3>Game result</h3>
+                <p data-summary="your-choice">Your choice: <span></span></p>
+                <p data-summary="AI-choice">AI choice: <span></span></p>
+                <p data-summary="who-win">Result: <span></span></p>
+            </section>
+            <section class="result-live">
+                <h3>Current results</h3>
+                <p id="game-number">Number of game: <span>0</span></p>
+                <p id="game-wins">winnings: <span>0</span></p>
+                <p id="game-loses">losers: <span>0</span></p>
+                <p id="game-draws">draws: <span>0</span></p>
+            </section>
+        </main>
+        <footer>&copy; Krylak123</footer>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
