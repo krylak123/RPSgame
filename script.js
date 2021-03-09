@@ -42,12 +42,18 @@ const showResult = (player, ai, result) => {
     document.querySelector('#game-number span').textContent = ++gameSummaryLive.gameNumber;
     if (result === 'win') {
         document.querySelector('[data-summary="who-win"] span').textContent = 'You win!!!';
+        document.querySelector('[data-summary="who-win"] span').style.color = 'lightgreen';
+        document.querySelector('[data-summary="who-win"] span').style.fontWeight = 'bold';
         document.querySelector('#game-wins span').textContent = ++gameSummaryLive.wins;
     } else if (result === 'lose') {
         document.querySelector('[data-summary="who-win"] span').textContent = 'You lose :C';
+        document.querySelector('[data-summary="who-win"] span').style.color = 'red';
+        document.querySelector('[data-summary="who-win"] span').style.fontWeight = 'bold';
         document.querySelector('#game-loses span').textContent = ++gameSummaryLive.losses;
     } else {
         document.querySelector('[data-summary="who-win"] span').textContent = 'Draw :/';
+        document.querySelector('[data-summary="who-win"] span').style.color = 'black';
+        document.querySelector('[data-summary="who-win"] span').style.fontWeight = 'bold';
         document.querySelector('#game-draws span').textContent = ++gameSummaryLive.draws;
     }
 }
